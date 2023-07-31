@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="https://us.123rf.com/450wm/imagevectors/imagevectors1603/imagevectors160301070/53903709-piso-blanco-del-cuaderno-web-icono-en-el-bot%C3%B3n-verde-con-sombra.jpg">
+    <script src="/index.js"></script>
+   <link rel="stylesheet" href="/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuaderno Web</title>
+</head>
+<body>
+    <div class="box" id="conte" >
+        <div class="form" id="form1">
+            <h2>Mi cuaderno Web</h2> <br/><br/>
+                <div class="inputBox">
+                    <a href="#opcion1" onclick="ocultar()" >1. Origenes de las bases de datos</a> 
+                    <br/><br/>
+                </div>
+                <div class="inputBox">
+                    <a href="#opcion2" onclick="ocultar2()">2. Como funcionan las bases de datos</a> 
+                    <br/><br/>
+                </div>
+                <div class="inputBox">
+                    <a href="#opcion3" onclick="ocultar3()">3. Conceptos basicos de bases de datos</a> 
+                    <br/><br/> 
+                </div>
+                <div class="inputBox"> 
+                    <a href="#opcion4" onclick="ocultar4()">4. Explicacion acerca del ODBC</a> 
+                    <br/><br/>
+                </div>
+                <div class="inputBox"> 
+                    <a href="#opcion5" onclick="ocultar5()">5. Tipos de bases de datos</a> 
+                    <br/><br/>
+                </div>
+                <div class="inputBox"> 
+                    <a href="#opcion6" onclick="ocultar6()">6. Utilizacion de MySQL</a> 
+                    <br/><br/>
+                </div>
+                <div class="inputBox"> 
+                    <a href="#opcion7" onclick="ocultar7()">7. Utilizacion de Access</a> 
+                    <br/><br/>
+                </div>
+                <div class="inputBox"> 
+                    <a href="#opcion8" onclick="ocultar8()">8. Utilizacion de Postgres</a> 
+                    <br/><br/>
+                </div>
+                <div class="inputBox"> 
+                    <a href="#opcion9" onclick="ocultar9()">9. Aplicaciones para gestion de bases de datos</a> 
+                    <br/><br/>
+                </div>
+                <div class="inputBox"> 
+                    <a href="#opcion10" onclick="ocultar10()">10. SQLYOG</a> 
+                    <br/><br/>
+                </div>
+                <div class="inputBox"> 
+                    <a href="#opcion11" onclick="ocultar11()">11. Heidi</a> 
+                    <br/><br/>
+                </div>
+                <div class="inputBox"> 
+                    <a href="#opcion12" onclick="ocultar12()">12. PgAdmin</a> 
+                    <br/><br/>
+                </div>
+                <div class="inputBox"> 
+                    <a href="#opcion13" onclick="ocultar13()">13. Dbeaver</a> 
+                    <br/><br/>
+                </div>
+                <div class="inputBox"> 
+                    <a href="#opcion14" onclick="ocultar14()">14. Motores de bases de datos existentes</a> 
+                    <br/><br/>
+                </div>
+                <div class="inputBox"> 
+                    <a href="#opcion15" onclick="ocultar15()">15. Como funciona cada motor de base de datos</a> 
+                    <br/><br/><br/><br/>  
+                 </div>
+                 <a href="#opcion01" onclick="ocultar01()"id="siguiente">Siguiente pagina</a> 
+        </div>
+        <div class="form" id="opcion1"> 
+            <h2>Origenes de las bases de datos</h2><br/>
+            <div class="inputBox">
+                Los orígenes de las bases de datos se remontan a la década de 1960, cuando la necesidad de almacenar y acceder eficientemente 
+                a grandes cantidades de información se hizo evidente con el crecimiento de la tecnología y la informática. Aquí tienes un 
+                breve resumen de los principales hitos en los orígenes de las bases de datos: <br/><br/>
+
+1. <strong>Jerarquía de Sistemas de Archivos:</strong> Antes del concepto de bases de datos, los datos se almacenan en sistemas de archivos 
+jerárquicos. Estos sistemas eran eficaces para datos simples, pero se volvían complejos y difíciles de mantener a medida que crecían y 
+se interconectaban.<br/><br/>
+
+2. <strong>Modelo de Red:</strong> A fines de la década de 1960, Charles Bachman desarrolló el modelo de red, una mejora de la jerarquía 
+de sistemas de archivos que permitió a los registros tener múltiples relaciones con otros registros. <br/><br/>
+
+3. <strong>Modelo Relacional:</strong> En 1970, Edgar F. Codd destaca el modelo relacional, que se basa en el álgebra relacional y la 
+teoría de conjuntos. Introdujo la idea de organizar datos en tablas con filas y columnas, y utilizar claves para relacionar tablas 
+entre sí. <br/><br/>
+
+4. <strong>Desarrollo de SQL:</strong>Structured Query Language (SQL) se desarrolló en IBM en la década de 1970. Es un lenguaje de 
+programación utilizado para manipular datos en bases de datos relacionales. SQL permitió a los usuarios realizar consultas complejas 
+y operaciones de manera sencilla y eficiente.<br/><br/>
+
+5. <strong> Bases de Datos Comerciales:</strong> En la década de 1980, los sistemas de bases de datos comerciales comenzaron a surgir, 
+como Oracle, DB2 y Microsoft SQL Server. Estos sistemas obtuvieron una mayor estabilidad, rendimiento y funcionalidad.<br/><br/>
+
+6. <strong>Bases de Datos NoSQL:</strong> En la década de 2000, surgió el movimiento NoSQL (Not Only SQL), que propuso alternativas a las 
+bases de datos relacionales tradicionales. Estos sistemas estaban diseñados para manejar grandes volúmenes de datos no estructurados o 
+semiestructurados, como documentos, gráficos y datos de series temporales.<br/><br/>
+
+
+               
+            <a href="#fomr1" onclick="mostrar()" id="volver">Volver</a>
+            </div>
+        </div>
+
+        <div class="form" id="opcion2"> 
+            <h2>Como funcionan las bases de datos</h2><br/>
+            <div class="inputBox">
+                Funcionan mediante el uso de un Sistema de Gestión de Bases de Datos (DBMS):<br/><br/>
+
+                1. <strong>Almacenamiento:</strong> Las bases de datos almacenan los datos en estructuras organizadas, como tablas (en bases de 
+                datos relacionales) o documentos (en bases de datos NoSQL). Cada registro contiene información sobre un elemento específico. <br/><br/>
+                
+                2. <strong>Consultas:</strong> Los usuarios pueden realizar consultas a través de lenguajes de consulta, como SQL. Las consultas 
+                permiten buscar, recuperar y manipular datos de manera selectiva.<br/><br/>
+                
+                3. <strong>Índices:</strong> Para acelerar el acceso a los datos, las bases de datos utilizan índices que actúan como guías para 
+                encontrar rápidamente información específica.<br/><br/>
+                
+                4. <strong>Transacciones:</strong> Las bases de datos aseguran la integridad de los datos mediante transacciones. Las transacciones 
+                agrupan operaciones en una unidad lógica y aseguran que se realicen de manera completa y consistente.<br/><br/>
+                
+                5.<strong> Seguridad: </strong>Las bases de datos implementan medidas de seguridad para proteger los datos de accesos no autorizados 
+                o daños. Esto incluye autenticación y autorización de usuarios, así como encriptación de datos.<br/><br/>
+                
+                6.<strong> Mantenimiento:</strong>Los DBMS gestionan el mantenimiento y la optimización de la base de datos, como la compactación, 
+                el respaldo y la recuperación ante fallos.<br/><br/>
+                
+                7.<strong>Escalabilidad:</strong> Las bases de datos pueden adaptarse para manejar grandes volúmenes de datos y una mayor cantidad 
+                de usuarios a medida que crece la demanda.<br/><br/>
+                
+                En resumen, las bases de datos funcionan como un sistema centralizado para almacenar y gestionar datos de manera 
+                eficiente y segura, permitiendo a los usuarios acceder, consultar y manipular la información de forma organizada y consistente.<br/><br/>
+                <a href="#fomr1" onclick="mostrar2()" id="volver">Volver</a>
+            </div>
+        </div>
+        <div class="form" id="opcion3"> 
+            <h2>Conceptos basicos de bases de datos</h2><br/>
+            <div class="inputBox">
+                El concepto básico de una base de datos es un sistema diseñado para almacenar, organizar y gestionar información de 
+                manera estructurada y eficiente. En lugar de utilizar archivos individuales, una base de datos centraliza los 
+                datos en tablas (en bases de datos relacionales) o documentos (en bases de datos NoSQL), lo que facilita su 
+                acceso y manipulación. <br/><br/>
+
+                Una base de datos permite a los usuarios realizar consultas para buscar, recuperar y modificar datos selectivamente, 
+                usando lenguajes de consulta como SQL. Además, implementa medidas de seguridad para proteger los datos de accesos 
+                no autorizados y asegurar la integridad y confiabilidad de la información almacenada.<br/><br/>
+                
+                Las bases de datos son fundamentales en aplicaciones y sistemas modernos, ya que facilitan la gestión y 
+                análisis de grandes cantidades de información, permitiendo tomar decisiones informadas y ofreciendo un 
+                almacenamiento seguro y organizado de los datos.<br/><br/><br/>
+                
+            <a href="#fomr1" onclick="mostrar3()" id="volver">Volver</a>
+            </div>
+        </div>
+        <div class="form" id="opcion4"> 
+            <h2>Explicacion acerca del ODBC</h2><br/>
+            <div class="inputBox">
+                ODBC (Open Database Connectivity) es una interfaz de programación estándar que permite a las aplicaciones 
+                acceder y gestionar datos en bases de datos de diferentes proveedores utilizando un mismo conjunto de funciones. 
+                Fue desarrollado por Microsoft en 1992 y ha sido adoptado por muchos sistemas operativos y lenguajes de programación.<br/><br/>
+
+La principal ventaja de ODBC es que proporciona una capa de abstracción entre la aplicación y la base de datos subyacente, 
+lo que permite que la aplicación sea independiente del proveedor de la base de datos. Esto significa que una misma aplicación 
+puede conectarse y trabajar con bases de datos de diferentes proveedores (por ejemplo, Oracle, SQL Server, MySQL) sin tener 
+que realizar cambios significativos en el código.<br/><br/>
+
+El funcionamiento de ODBC es sencillo: una aplicación se comunica con ODBC utilizando sus funciones y ODBC, a su vez, 
+se comunica con el controlador (driver) específico proporcionado por el proveedor de la base de datos para traducir las 
+realizadas por la aplicación en instrucciones que la base de datos comprenda.<br/><br/>
+
+En resumen, ODBC es una interfaz estándar que permite a las aplicaciones interactuar con bases de datos de múltiples 
+proveedores de manera uniforme, brindando flexibilidad y portabilidad en el acceso a datos en diferentes entornos.<br/><br/><br/>
+                <a href="#fomr1" onclick="mostrar4()" id="volver">Volver</a>
+            </div>
+        </div> 
+        <div class="form" id="opcion5"> 
+            <h2>Tipos de bases de datos</h2><br/><br/>
+            <div class="inputBox">
+                
+1. <strong> Bases de Datos Relacionales:</strong> Almacenan datos en tablas con filas y columnas, utilizando claves para establecer 
+relaciones entre ellas. Son adecuadas para datos estructurados y relaciones complejas. <br/><br/>
+
+2.<strong> Bases de Datos NoSQL:</strong> Se utilizan para datos no estructurados o semiestructurados. Los principales tipos son:<br/><br/>
+   - Bases de Datos de Documentos: Almacenan datos en documentos (JSON, BSON) y son flexibles para cambios en la estructura.<br/>
+   - Bases de Datos de Gráficos: Óptimas para datos altamente relacionados y consultas complejas que involucran relaciones.<br/>
+   - Bases de Datos de Clave-Valor: Almacenan pares clave-valor y son ideales para almacenamiento rápido y acceso eficiente.<br/><br/>
+
+3.<strong> Bases de Datos en Memoria:</strong> Almacenan datos en la memoria RAM en lugar de en discos, lo que ofrece tiempos de 
+acceso muy rápidos para aplicaciones que requieren alta velocidad.<br/><br/>
+
+4. <strong>Bases de Datos Distribuidas:</strong> Reparten datos en múltiples servidores, permitiendo escalabilidad y redundancia 
+para mejorar el rendimiento y la disponibilidad.<br/><br/>
+
+5.<strong> Bases de Datos en la Nube: </strong>Ofrecen almacenamiento y gestión de datos en la nube, lo que permite un acceso global y 
+flexible a través de Internet.<br/><br/>
+
+6.<strong>Bases de Datos de Series Temporales:</strong> Optimizadas para el almacenamiento y análisis de datos que cambian con el tiempo, 
+como sensores, registros de eventos o datos climáticos.<br/><br/><br/>
+
+                <a href="#fomr1" onclick="mostrar5()"id="volver">Volver</a>
+            </div>
+        </div> 
+        <div class="form" id="opcion6"> 
+            <h2>Utilizacion de MySQL</h2><br/>
+            <div class="inputBox">
+                MySQL es un sistema de gestión de bases de datos relacional (RDBMS) muy popular y ampliamente utilizado 
+                en todo el mundo. Es una excelente opción para almacenar y administrar datos estructurados en diversas 
+                aplicaciones y sitios web. Algunas funciones que nos permiten hacer es: <br/><br/>
+                <img src="https://www.educative.io/v2api/editorpage/6575689680551936/image/4670199253958656" alt="" width="600px"><br/><br/>
+<strong>Creación de Tablas.</strong> <br/><br/>
+<strong>Consultas con SQL (inserar, actualizar, eliminar y consultar datos)</strong><br/><br/>
+<strong>Conexiones con Aplicaciones (Compatible con PHP, Python, Java, C#)</strong><br/><br/>
+<strong>Seguridad y Gestión</strong><br/><br/>
+<strong>Puede manejar grandes volúmenes de datos y un alto número de conexiones simultáneas</strong><br/><br/>
+En resumen, MySQL es una base potente y versátil de datos relacionales. Su facilidad de uso, escalabilidad y compatibilidad con múltiples 
+lenguajes de programación lo define en una opción confiable para almacenar y gestionar datos en una variedad de aplicaciones.<br/><br/>
+                <a href="#fomr1" onclick="mostrar6()"id="volver">Volver</a>
+            </div>
+        </div> 
+        <div class="form" id="opcion7"> 
+            <h2>Utilizacion de Access</h2><br/><br/>
+            <div class="inputBox">
+                Microsoft Access es un sistema de gestión de bases de datos de escritorio que forma parte del paquete 
+                de Microsoft Office. Está diseñado para usuarios y pequeñas empresas que necesitan crear y gestionar 
+                bases de datos de manera sencilla. Aquí tienes un breve resumen de la utilización de Microsoft Access: <br/>
+                <img src="https://codigosql.top/wp-content/uploads/2023/04/que-es-microsoft-access.png" width="600px"><br/>
+                
+
+Los usuarios pueden crear bases de datos desde cero o utilizar plantillas predefinidas para diferentes tipos de aplicaciones, 
+como seguimiento de clientes, inventario o gestión de proyectos. Tambien pueden crear tablas para organizar y almacenar datos. 
+Cada tabla contiene campos que representan diferentes atributos de los datos, como nombres, fechas, números, etc.<br/><br/>
+
+Access ofrece herramientas para diseñar formularios personalizados que permiten la entrada y edición 
+de datos de manera más amigable y estructurada que trabajando directamente en las tablas.Access se integra con otros 
+programas de Microsoft Office, lo que facilita la importación y exportación de datos entre Access, Excel y otros programas.<br/><br/>
+
+
+                <a href="#fomr1" onclick="mostrar7()"id="volver">Volver</a>
+            </div>
+        </div> 
+        <div class="form" id="opcion8"> 
+            <h2>Utilizacion de Postgres</h2><br/><br/>
+            <div class="inputBox">
+                PostgreSQL es un RDBMS de código abierto y alto rendimiento. Permite crear bases de datos, tablas y 
+                soporta datos estructurados y no estructurados (JSONB). Ofrece consultas SQL avanzadas, extensibilidad 
+                con funciones personalizadas y múltiples lenguajes. Es compatible con diversos lenguajes de programación. 
+                Garantiza transacciones ACID y seguridad en el acceso. Permite replicación y alta disponibilidad para 
+                respaldos y fallas. Utilizado en aplicaciones web, empresariales y proyectos diversos, ofrece rendimiento, 
+                confiabilidad y escalabilidad, siendo una opción confiable para proyectos de diferentes complejidades.<br/><br/>
+                <img src="https://kinsta.com/wp-content/uploads/2022/02/postgres-logo.png" width="600px"><br/><br/><br/>
+                
+                <a href="#fomr1" onclick="mostrar8()"id="volver">Volver</a>
+            </div>
+        </div> 
+        <div class="form" id="opcion9"> 
+            <h2>Aplicaciones para gestion de bases de datos</h2><br/><br/>
+            <div class="inputBox">
+                Algunas de las aplicaciones más usadas son:<br/><br/>
+
+<strong>phpMyAdmin:</strong> Es una aplicación web de código abierto diseñado para gestionar bases de datos MySQL o 
+MariaDB. Permite realizar tareas como la creación de bases de datos, tablas, consultas SQL y gestión de usuarios.<br/><br/>
+
+<strong>MySQL Workbench:</strong> Es una herramienta oficial de Oracle para administrar bases de datos MySQL. Ofrece 
+una interfaz gráfica para diseñar bases de datos, crear tablas, realizar consultas y generar informes.<br/><br/>
+
+<strong>pgAdmin:</strong> Es una herramienta de administración para bases de datos PostgreSQL. Permite realizar tareas de 
+diseño, gestión de usuarios, consultas y monitorización del rendimiento.<br/><br/>
+
+<strong>MongoDB Compass:</strong> Es una interfaz gráfica oficial para administrar bases de datos MongoDB. Facilita la 
+visualización y manipulación de datos en bases de datos NoSQL basados ​​en documentos.<br/><br/>
+
+<strong>Navicat:</strong> Es una aplicación multiplataforma que soporta varios sistemas de gestión de bases de datos, 
+como MySQL, PostgreSQL, Oracle y SQLite. Permite realizar tareas de diseño, gestión y consultas en diferentes bases de datos.<br/><br/>
+
+<strong>Microsoft SQL Server Management Studio (SSMS):</strong> Es una herramienta oficial de Microsoft para administrar 
+bases de datos SQL Server. Ofrece una amplia gama de funcionalidades para gestión, consulta y desarrollo.<br/><br/>
+
+<strong>SQLiteStudio:</strong> Es una herramienta multiplataforma para gestionar bases de datos SQLite. Permite crear 
+tablas, ejecutar consultas SQL y navegar por los datos almacenados.<br/><br/><br/>
+                <a href="#fomr1" onclick="mostrar9()"id="volver">Volver</a>
+            </div>
+        </div> 
+        <div class="form" id="opcion10"> 
+            <h2>SQLYOG</h2><br/><br/><br/>
+            <div class="inputBox">
+                SQLyog es una herramienta de administración y gestión de bases de datos relacionales MySQL. 
+                Es una aplicación de escritorio desarrollada por Webyog, que proporciona una interfaz gráfica 
+                intuitiva para trabajar con bases de datos MySQL de manera eficiente.<br/><br/>
+                <img src="https://lh3.googleusercontent.com/blogger_img_proxy/AAOd8MwDQJd2CdJoyyKIYNSfmKhzbpGUhTzTNkKL-Vj_D3zm48Rl_ExRCb19dpi3GpuAm4WjgY5f7XTnj34BWhNzkJLPooPVmRWNJ9DK3zQenU-Jhcc_5RumOnAfCmo53Q=w1200-h630-p-k-no-nu" width="600px"><br/><br/>
+
+                Permite diseñar tablas,índices y procesadores. Facilita la escritura y ejecución de consultas SQL con resaltado de sintaxis y 
+                 autocompletado. También permite importar y exportar datos entre diferentes bases de datos y formatos. 
+                 Ofrece una visualización gráfica de los datos en tablas y una vista de árbol para navegar por la 
+                 estructura de la base de datos. Permite programar tareas automatizadas para consultas y respaldos. 
+                 Cuenta con opciones de seguridad para gestionar usuarios y permisos. SQLyog es ampliamente utilizado 
+                 por administradores y desarrolladores debido a su facilidad de uso y funcionalidades avanzadas.<br/><br/><br/>
+                <a href="#fomr1" onclick="mostrar10()"id="volver">Volver</a>
+            </div>
+        </div> 
+        <div class="form" id="opcion11"> 
+            <h2>HeidiSQL</h2><br/><br/><br/>
+            <div class="inputBox">
+                HeidiSQL, es un software libre y de código abierto que permite conectarse a MySQL (y sus derivaciones 
+                como MariaDB y Percona Server), así como Microsoft SQL Server y PostgreSQL.<br/><br/>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/32/HeidiSQL_logo_image.png" width="400px" height="300px"><br/><br/>
+               ALgunas caracteristicas de Heidi:<br/>
+
+Conexión con el servidor, permite guardar múltiples sesiones con conexiones y credenciales se puede comunicar con los servidores 
+vía TCP/IP, tubería nombrada (sockets) o un protocolo de túnel (SSH), ademas se puede administrar usuarios en el servidor: 
+añadir, remover y modificar usuarios, y sus credenciales.<br/><br/>
+
+Múltiples pestañas de consultas, teniendo a su vez múltiples sub pestañas para los resultados del procesamiento por lotes. 
+Ver los procesos que se están ejecutando para analizar el SQL ejecutado y finalizar procesos problemáticos.
+Ver todas las bases de datos en el servidor, conectarse a una base de datos para trabajar con sus tablas y datos
+Ver el tamaño total de las bases de datos y sus tablas en KB/MB/GB dentro de la estructura de árbol base de datos/tabla.<br/><br/><br/>
+
+                <a href="#fomr1" onclick="mostrar11()"id="volver">Volver</a>
+            </div>
+        </div> 
+        <div class="form" id="opcion12"> 
+            <h2>PgAdmin</h2><br/><br/>
+            <div class="inputBox">
+                pgAdmin es una herramienta de administración y desarrollo de bases de datos PostgreSQL. 
+                Es una aplicación de código abierto que proporciona una interfaz gráfica intuitiva y potente 
+                para gestionar bases de datos PostgreSQL de manera eficiente.<br/><br/>
+                <img src="https://i0.wp.com/www.opensourcelisting.com/wp-content/uploads/2021/12/pgadmin.png?fit=544%2C253&ssl=1" width="600px" height="200px"><br/><br/>
+                Las características principales de pgAdmin incluyen:<br/>
+
+-Administración de Bases de Datos<br/><br/>
+-Consultas SQL<br/><br/>
+-Importación y Exportación de Datos<br/><br/>
+-Visualización de Datos<br/><br/>
+-Monitoreo y Rendimiento<br/><br/>
+-Seguridad<br/><br/>
+
+pgAdmin es ampliamente utilizado por administradores y desarrolladores de bases de datos PostgreSQL debido a su 
+facilidad de uso y su amplia gama de funcionalidades. Es una herramienta esencial para trabajar con bases de datos 
+PostgreSQL y facilitar la gestión, consulta y administración de esta base de datos de código abierto.<br/><br/><br/>
+                <a href="#fomr1" onclick="mostrar12()"id="volver">Volver</a>
+            </div>
+        </div> 
+        <div class="form" id="opcion13"> 
+            <h2>Dbeaver</h2><br/><br/><br/>
+            <div class="inputBox">
+                DBeaver es una herramienta de gestión de bases de datos de código abierto y multiplataforma. 
+                Su interfaz gráfica intuitiva facilita el trabajo con bases de datos relacionales y NoSQL. 
+                Permite conectarse a una amplia variedad de sistemas de bases de datos, como MySQL, PostgreSQL, 
+                Oracle, SQL Server y MongoDB. Ofrece funciones avanzadas para realizar consultas SQL con resaltado 
+                de sintaxis y autocompletado, así como la visualización de resultados. Además, proporciona herramientas 
+                de diseño y modelado para esquemas de bases de datos y permite importar y exportar datos en diferentes 
+                formatos. También incluye opciones para monitorear el rendimiento y recursos del servidor, así como para 
+                gestionar la seguridad de usuarios y permisos. Su capacidad de extensión mediante complementos lo hace 
+                adaptable a necesidades específicas.<br/><br/>
+                <img src="https://blog.anant.us/wp-content/uploads/2021/08/DBeaver-logo.png" width="600px"><br/><br/><br/>
+                
+                <a href="#fomr1" onclick="mostrar13()"id="volver">Volver</a>
+            </div>
+        </div> 
+        <div class="form" id="opcion14"> 
+            <h2>Motores de bases de datos existentes</h2><br/><br/>
+            <div class="inputBox">
+                Algunos motores de bases de datos mas populares y conocidos:<br/>
+                <ol>
+                    <li>MySQL</li>
+                    <li>Postgresql</li>
+                    <li>SQLite</li>
+                    <li>Servidor SQL de Microsoft</li>
+                    <li>MariaDB</li>
+                    <li>Oracle</li>
+                </ol><br/><br/>
+                <img src="https://edteam-media.s3.amazonaws.com/blogs/original/67b0740a-d980-4416-b39c-a2f4c969630e.png" width="600px" height="450px"><br/><br/><br/>
+                <a href="#fomr1" onclick="mostrar14()"id="volver">Volver</a>
+            </div>
+        </div>
+        <div class="form" id="opcion15"> 
+            <h2>Como funciona cada motor de base de datos</h2><br/><br/><br/>
+            <div class="inputBox">
+                <ol>
+                    <li><strong>MySQL:</strong>  Es un sistema de gestión de bases de datos relacionales (RDBMS) que utiliza el lenguaje SQL para interactuar con los datos almacenados en tablas. Es ampliamente utilizado en aplicaciones web y debido a su rendimiento y facilidad de uso.</li><br/><br/>
+                    <li><strong>PostgreSQL: </strong>También es un RDBMS, pero se destaca por su énfasis en la extensibilidad, estándares y características avanzadas. Utiliza SQL y ofrece soporte para datos no estructurados, lo que lo convierte en una opción sólida para proyectos complejos.</li><br/><br/>
+                    <li> <strong>SQLite:</strong> Es una base de datos de código abierto y autocontenido que se integra directamente en las aplicaciones. No requiere un servidor de base de datos separado, lo que lo hace ideal para aplicaciones móviles y de escritorio.</li><br/><br/>
+                    <li><strong>Microsoft SQL Server:</strong> Es un RDBMS desarrollado por Microsoft y se centra en el entorno Windows. Es utilizado en aplicaciones empresariales y ofrece herramientas para la gestión, consultas y administración de datos.</li><br/><br/>
+                    <li><strong>MariaDB:</strong> Es un RDBMS de código abierto que es un fork de MySQL. Busca mejorar y expandir las características de MySQL, brindando una mayor compatibilidad y rendimiento.</li><br/><br/>
+                    <li><strong>Oracle:</strong> Es un RDBMS de gran escala y alta disponibilidad desarrollado por Oracle Corporation. Se utiliza en aplicaciones empresariales de gran tamaño y ofrece potentes herramientas para el procesamiento de datos complejos y críticos.</li><br/><br/><br/>
+
+                </ol>
+                <a href="#fomr1" onclick="mostrar15()"id="volver">Volver</a>
+            </div>
+        </div> 
+        <div class="form" id="opcion01">
+            <h2>Funcionamiento de Access</h2> <br/><br/>
+            <div class="inputBox">
+                <a href="#opcion02" onclick="ocultar02()" >1. Haciendo tablas</a> 
+                <br/><br/>
+            </div>
+            <div class="inputBox">
+                <a href="#opcion03" onclick="ocultar03()" >2. Haciendo relaciones</a> 
+                <br/><br/>
+            </div>
+            <div class="inputBox">
+                <a href="#opcion04" onclick="ocultar04()" >3. Haciendo fromularios</a> 
+                <br/><br/>
+            </div>
+            <div class="inputBox">
+                <a href="#opcion05" onclick="ocultar05()" >4. Haciendo reportes</a> 
+                <br/><br/>
+            </div><br/><br/>
+            <a href="#form1" onclick="mostrar01()" >Anterior pagina</a> 
+
+        </div>
+        <div class="form" id="opcion02"> 
+            <h2>Tablas en Access</h2><br/><br/><br/>
+            <div class="inputBox">
+                <img src="/tabals access.jpg" width="600px"><br/><br/><br/><br/>
+                <a href="#fomr1" onclick="mostrar02()"id="volver">Volver</a>
+            </div>
+        </div>
+        <div class="form" id="opcion03"> 
+            <h2>Relaciones en Access</h2><br/><br/><br/>
+            <div class="inputBox">
+                <img src="https://aprendelibvrefiles.blob.core.windows.net/aprendelibvre-container/course/image/23/acces07_05_04b_l.png" width="600px"><br/><br/><br/><br/>
+                <a href="#fomr1" onclick="mostrar03()"id="volver">Volver</a>
+            </div>
+        </div>
+        <div class="form" id="opcion04"> 
+            <h2>Formularios en Access</h2><br/><br/><br/>
+            <div class="inputBox">
+                <img src="https://www.aulaclic.es/access-2010/graficos/ventana_disenyo_form.gif" width="600px"><br/><br/><br/><br/>
+                <a href="#fomr1" onclick="mostrar04()"id="volver">Volver</a>
+            </div>
+        </div>
+        <div class="form" id="opcion05"> 
+            <h2>Reportes en Access</h2><br/><br/><br/>
+            <div class="inputBox">
+                <img src="https://www.solvetic.com/uploads/monthly_10_2014/tutorials-2308-0-42437300-1414118359.jpg" width="600px"><br/><br/><br/><br/>
+                <a href="#fomr1" onclick="mostrar05()"id="volver">Volver</a>
+            </div>
+        </div>
+    </div>    
+</body>
+</html>

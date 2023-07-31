@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #23242a;
+}
+.box{
+    position: relative;
+    width: 480px;
+    height: 890px;
+    background: #1c1c1c;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.box::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 480px;
+    height: 890px;
+    background: linear-gradient(0deg, transparent,#e645ff , #131213 );
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+} 
+.box::after{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 480px;
+    height: 890px;
+    background: linear-gradient(0deg, transparent,#e645ff , #4eff45 );
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite; 
+    animation-delay: -3s;
+}
+
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+#opcion1{
+    display: none;
+}
+#opcion2{
+    display: none;
+}
+#opcion3{
+    display: none;
+}
+#opcion4{
+    display: none;
+}
+#opcion5{
+    display: none;
+}
+#opcion6{
+    display: none;
+}
+#opcion7{
+    display: none;
+}
+#opcion8{
+    display: none;
+}
+#opcion9{
+    display: none;
+}
+#opcion10{
+    display: none;
+}
+#opcion11{
+    display: none;
+}
+#opcion12{
+    display: none;
+}
+#opcion13{
+    display: none;
+}
+#opcion14{
+    display: none;
+}
+#opcion15{
+    display: none;
+}
+#opcion01{
+    display: none;
+}
+#opcion02{
+    display: none;
+}
+#opcion03{
+    display: none;
+}
+#opcion04{
+    display: none;
+}
+#opcion05{
+    display: none;
+}
+.form{
+    position: absolute;
+    inset: 2px;
+    border-radius: 8px;
+    background: #28292d;
+    z-index: 10;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+}
+.form h2{
+    color:#45f3ff ;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+.inputBox{
+    color:#9c9c9c ;
+}
+#volver{
+    color:#33b2f1;
+    border: 3px solid #c922df;
+    padding: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: #9c9c9c;
+    font-size: 18px;
+}
+p{
+    color: aqua;
+    font-size: 14px;
+    line-height: 25px;
+    
+}
